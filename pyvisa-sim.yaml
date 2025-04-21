@@ -1,0 +1,23 @@
+instruments:
+  ASRL1::INSTR:
+    manufacturer: Keysight
+    model: E3631A
+    serial_number: 123456
+    interface_type: ASRL
+    instrument_type: power_supply
+    metadata:
+      visa_sim: true
+    responses:
+      "*IDN?": "KEYSIGHT,E3631A,123456,1.0"
+
+  USB0::0x0AAD::0x0054::1234::INSTR:
+    manufacturer: R&S
+    model: NRPZ11
+    serial_number: 1234
+    interface_type: USB
+    instrument_type: power_meter
+    metadata:
+      visa_sim: true
+    responses:
+      "*IDN?": "R&S,NRPZ11,1234,1.0"
+      
